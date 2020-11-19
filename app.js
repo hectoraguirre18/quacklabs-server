@@ -22,7 +22,7 @@ http.createServer((req, res) => {
       })
     }else {
       try {
-        const file = req.url === '/' ? './WWW/view/landing.pug' : `./WWW${req.url}`;
+        const file = req.url === '/' ? './WWW/view/landing.pug' : `./WWW/view${req.url}.pug`;
         const pugFile = pug.renderFile(file, { name: 'Quack'});
         res.writeHead(200, {"Content-Type": "text/html"});
         res.write(pugFile);
