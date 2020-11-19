@@ -1,0 +1,33 @@
+{
+    "servidor": "Quack Labs",
+    "equipo": [
+       {
+          "name": "Héctor René",
+          "lastName": "Aguirre Chávez",
+          "languages": "",
+          "description": "Estudiante de ingeniería que ama los patos y los chistes malos.",
+          "imageUrl": ""
+       },
+       {
+          "name": "Carlos Tomás",
+          "lastName": "García Martínez",
+          "languages": "",
+          "description": "Estudiante de ingeniería que ama los pingüinos y ser el segundo mayor simp de Eskeler.",
+          "imageUrl": ""
+       },
+       {
+          "name": "Uriel Omar",
+          "lastName": "González Jimenez",
+          "languages": "",
+          "description": "Estudiante de ingeniería, Siiiiiiiiiiiiiiuuuuuuuuuu (no acepta que es el bicho)",
+          "imageUrl": ""
+       },
+       {
+          "name": "Abraham",
+          "lastName": "Ibarra Linares",
+          "languages": "",
+          "description": "Estudiante de ingeniería que le gusta respirar en el microfo y comerselo.",
+          "imageUrl": ""
+       }
+    ]
+ }
