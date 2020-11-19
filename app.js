@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const log4js = require('log4js');
 const pug = require('pug');
+const team = require('./WWW/team.json');
 
 const logger = log4js.getLogger();
 logger.level = 'debug';
@@ -22,8 +23,10 @@ http.createServer((req, res) => {
       })
     }else {
       try {
+        //const teamJson = JSON.parse(team);
+        console.log(team);
         const file = req.url === '/' ? './WWW/view/landing.pug' : `./WWW/view${req.url}.pug`;
-        const pugFile = pug.renderFile(file, { name: 'Quack'});
+        const pugFile = pug.renderFile(file, {team: team.equipo});
         res.writeHead(200, {"Content-Type": "text/html"});
         res.write(pugFile);
         res.end();
