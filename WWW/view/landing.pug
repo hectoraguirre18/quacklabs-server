@@ -1,7 +1,8 @@
 doctype html
 html
     head 
-        title= name      
+        title DuckLabs
+        meta(charset='utf-8')
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")  
         link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
         style 
@@ -17,22 +18,24 @@ html
             a(class="waves-effect waves-light btn orange darken-1") Send 
                 i(class="material-icons right") cloud
 
-        h1 Hola Mundo 
+            h1 Hola Mundo 
 
-        svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320")
-            path(fill="#212121" fill-opacity="1" d="M0,288L34.3,250.7C68.6,213,137,139,206,122.7C274.3,107,343,149,411,186.7C480,224,549,256,617,240C685.7,224,754,160,823,138.7C891.4,117,960,139,1029,144C1097.1,149,1166,139,1234,133.3C1302.9,128,1371,128,1406,128L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z")
-        div(class="second-background", style="background-color: #212121")
-            div(class="row")
-                each teammate in team
-                    div(class="col s6 m3")
-                        div(class="card blue-grey darken-1")
-                            div(class="card-image")
-                                img(src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg")
-                                span(class="card-title") #{teammate.name}
-                            div(class="card-content white-text")
-                                p #{teammate.description}
-                            div(class="card-action")
-                                a(href="#") Link 1
-                                a(href="#") Link 1
+        svg(class="mt-20 display-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320")
+            path(fill="#212121" fill-opacity="1" d="M0,288L80,282.7C160,277,320,267,480,245.3C640,224,800,192,960,192C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z")
+        div(class="second-background")
+            div(class="container pb-20")
+                h4(class="white-title mt-0") The Team
+                div(class="row mt-20")
+                    each teammate, index in team
+                        div(class="col s6 m6 l3")
+                            div(class="card large grey darken-3 noselect")
+                                div(class="card-image")
+                                    //img(src=teammate.imageUrl)
+                                    img(src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg")
+                                    span(class="card-title") #{teammate.name}
+                                div(class="card-content white-text")
+                                    p #{teammate.description}
+                                div(class="card-action")
+                                    a(href=`/profile/${index}`) See more
 
         script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
