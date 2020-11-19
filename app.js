@@ -15,10 +15,13 @@ http.createServer((req, res) => {
         res.write('NOT FOUND');
       } else {
         logger.info(`OK ${req.method} ${req.url}`);
-        res.writeHead(200, {"Content-Type": "text/html"});
+        if (file.split(".").pop() == "png")
+          response.writeHead(200, { "Content-Type": "image/png" });
+        else
+          res.writeHead(200, {"Content-Type": "text/html"});
         res.write(data);
-        res.end();
       }
+      res.end();
     });
   }
 }).listen(4000);
