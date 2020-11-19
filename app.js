@@ -21,11 +21,17 @@ http.createServer((req, res) => {
         res.end();
       })
     }else {
-      const file = req.url === '/' ? './WWW/view/landing.pug' : `./WWW${req.url}`;
-      const pugFile = pug.renderFile(file, { name: 'Quack'});
-      res.writeHead(200, {"Content-Type": "text/html"});
-      res.write(pugFile);
-      res.end();
+      try {
+        const file = req.url === '/' ? './WWW/view/landing.pug' : `./WWW${req.url}`;
+        const pugFile = pug.renderFile(file, { name: 'Quack'});
+        res.writeHead(200, {"Content-Type": "text/html"});
+        res.write(pugFile);
+        res.end();
+      } catch (e) {
+        logger.warn(`NOT FOUND ${req.method} ${req.url}`);
+        res.writeHead(404, {"Content-Type": "text/html"});
+        res.write('NOT FOUND');
+      }
     }
   }
-}).listen(4000);
+}).listen(process.env.PORT || 4000);
