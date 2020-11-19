@@ -29,4 +29,4 @@ http.createServer((req, res) => {
       res.end();
     }
   }
-}).listen(4000);
+}).listen(process.env.PORT || 4000);
