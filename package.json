@@ -12,6 +12,7 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "http": "0.0.1-security",
-    "log4js": "^6.3.0"
+    "log4js": "^6.3.0",
+    "pug": "^3.0.0"
   }
 }
