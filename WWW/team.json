@@ -6,28 +6,28 @@
           "lastName": "Aguirre Chavez",
           "languages": ["Java", "C++", "Javascript", "Dart", "Kotlin"],
           "description": "Estudiante de ingenieria que ama los patos y los chistes malos.",
-          "imageUrl": ""
+          "imageRoute": "/images/hector.png"
        },
        {
           "name": "Carlos Tomas",
           "lastName": "Garcia Martinez",
           "languages": [],
           "description": "Estudiante de ingenieria que ama los pinguinos y ser el segundo mayor simp de Eskeler.",
-          "imageUrl": ""
+          "imageRoute": "/images/carlos.png"
        },
        {
           "name": "Uriel Omar",
           "lastName": "Gonzalez Jimenez",
           "languages": [],
           "description": "Estudiante de ingenieria, Siiiiiiiiiiiiiiuuuuuuuuuu (no acepta que es el bicho)",
-          "imageUrl": ""
+          "imageRoute": "/images/uriel.png"
        },
        {
           "name": "Abraham",
           "lastName": "Ibarra Linares",
           "languages": [],
           "description": "Estudiante de ingenieria que le gusta respirar en el microfo y comerselo.",
-          "imageUrl": ""
+          "imageRoute": "/images/abraham.png"
        }
     ]
  }
