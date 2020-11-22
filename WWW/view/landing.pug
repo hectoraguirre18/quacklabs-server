@@ -1,13 +1,41 @@
 doctype html
 html
     head 
-        title= name
-        link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css')
+        title DuckLabs
+        meta(charset='utf-8')
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")  
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+        style 
+            include style.css
     body
-        nav(class='navbar navbar-dark bg-dark')
-        a(class='navbar-brand', href="#") Video Centro
-        div(class='container')
-        h1 Hola Mundo 
-        block content
-        script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js')
+        svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320")
+            path(fill="#212121" fill-opacity="1" d="M0,288L60,250.7C120,213,240,139,360,138.7C480,139,600,213,720,224C840,235,960,181,1080,160C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z")
+        div(class="container")
+            a(class="waves-effect waves-light btn pink darken-1") Send 
+                i(class="material-icons right") cloud
+            a(class="waves-effect waves-light btn teal") Send 
+                i(class="material-icons right") cloud
+            a(class="waves-effect waves-light btn orange darken-1") Send 
+                i(class="material-icons right") cloud
+
+            h1 Hola Mundo 
+
+        svg(class="mt-20 display-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320")
+            path(fill="#212121" fill-opacity="1" d="M0,288L80,282.7C160,277,320,267,480,245.3C640,224,800,192,960,192C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z")
+        div(class="second-background")
+            div(class="container pb-20")
+                h4(class="white-title mt-0") The Team
+                div(class="row mt-20")
+                    each teammate, index in team
+                        div(class="col s6 m6 l3")
+                            div(class="card large grey darken-3 noselect")
+                                div(class="card-image")
+                                    //img(src=teammate.imageUrl)
+                                    img(src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg")
+                                    span(class="card-title") #{teammate.name}
+                                div(class="card-content white-text")
+                                    p #{teammate.description}
+                                div(class="card-action")
+                                    a(href=`/profile/${index}`) See more
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')

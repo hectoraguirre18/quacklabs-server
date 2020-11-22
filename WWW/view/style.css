@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(213, 213, 213);
+}
+
+html {
+    padding-bottom: 0px !important;
+}
+
+.white-title {
+    color: white
+}
+
+.mt-0 {
+    margin-top: 0px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.second-background {
+    background-color: #212121;
+}
+
+.display-block {
+    display: block;
+}
+
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.circular {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -25%;
+    height: 100%;
+    width: auto;
+}
+
+.with-background {
+    background-image: url('https://a-static.besthdwallpaper.com/montana-de-hielo-papel-pintado-3554x1999-3228_53.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+
+.p-25 {
+    padding: 25px 0px;
+}
