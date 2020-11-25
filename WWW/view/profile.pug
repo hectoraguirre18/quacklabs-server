@@ -9,18 +9,19 @@ html
             include style.css
     body(class="with-background")
         div(class="container pt-100")
-            a(class="waves-effect waves-light btn pink darken-1" href="/") Regresar 
+            a(class="waves-effect waves-light btn pink darken-1" href="/") Return
                 i(class="material-icons right") keyboard_return
             div(class="card grey darken-3 mt-100 noselect p-25")
                 div(class="center-align")
                     div(class="image-cropper")
-                        img(class="circular" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg", alt="photo")
+                        img(class="circular" src=teammate.imageRoute, alt="photo")
                     div(class="card-title white-text")
                         h1 #{teammate.name}
                         each language in teammate.languages
                             div(class="chip") #{language}
                     div(class="card-content white-text")
                         p(class="flow-text") #{teammate.description}
+                        p(class="pt-100") TODO: Curriculum
 
 
         script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
