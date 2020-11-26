@@ -1,33 +1,38 @@
 {
-    "servidor": "Quack Labs",
+    "servidor": "QuackLabs",
     "equipo": [
        {
           "name": "Hector Rene",
           "lastName": "Aguirre Chavez",
-          "languages": ["Java", "C++", "Javascript", "Dart", "Kotlin"],
+          "languages": ["Java", "C++", "JavaScript", "Dart", "Kotlin"],
           "description": "Estudiante de ingenieria que ama los patos y los chistes malos.",
-          "imageRoute": "/images/hector.png"
+          "imageRoute": "/images/hector.png",
+          "curriculumRoute": "/pdfs/hector.pdf"
        },
        {
           "name": "Carlos Tomas",
           "lastName": "Garcia Martinez",
-          "languages": [],
-          "description": "Estudiante de ingenieria que ama los pinguinos y ser el segundo mayor simp de Eskeler.",
-          "imageRoute": "/images/carlos.png"
+          "languages": ["C++", "Java", "JavaScript", "Abap", "Python"],
+          "description": "Estudiante de la UACH, con exelente actitud, ama los pinguinos y los gatos.",
+          "imageRoute": "/images/carlos.png",
+          "curriculumRoute": "/pdfs/carlos.pdf"
        },
        {
           "name": "Uriel Omar",
           "lastName": "Gonzalez Jimenez",
-          "languages": [],
-          "description": "Estudiante de ingenieria, Siiiiiiiiiiiiiiuuuuuuuuuu (no acepta que es el bicho)",
-          "imageRoute": "/images/uriel.png"
+          "languages": ["Dart", "C++", "JavaScript", "TypeScript"],
+          "description": "Estudiante de programacion que ama los videojuegos.",
+          "imageRoute": "/images/uriel.png",
+          "curriculumRoute": "/pdfs/uriel.pdf"
        },
        {
           "name": "Abraham",
           "lastName": "Ibarra Linares",
-          "languages": [],
-          "description": "Estudiante de ingenieria que le gusta respirar en el microfo y comerselo.",
-          "imageRoute": "/images/abraham.png"
+          "languages": ["Dart", "C++", "TypeScript", "Kotlin"],
+          "description": "Estudiante de ciencias de la computacion que disfruta programar y escuchar musica.",
+          "imageRoute": "/images/abraham.png",
+          "curriculumRoute": "/pdfs/abraham.pdf"
        }
     ]
  }
+ 
