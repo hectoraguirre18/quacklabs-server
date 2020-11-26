@@ -11,17 +11,18 @@ html
         div(class="container pt-100")
             a(class="waves-effect waves-light btn amber darken-1" href="/") Regresar 
                 i(class="material-icons right") keyboard_return
-            div(class="card grey darken-3 mt-50 noselect ptb-30")
+            div(class="card grey darken-3 mt-50 mb-50 noselect ptb-30")
                 div(class="center-align")
-                    div(class="image-cropper")
-                        img(class="circular" src=teammate.imageRoute, alt="photo")
+                    div(class="image-circular", style=`background-image: url(${teammate.imageRoute});`)
+                        
                     div(class="card-title white-text")
                         h1 #{teammate.name}
                         each language in teammate.languages
                             div(class="chip") #{language}
                     div(class="card-content white-text")
                         p(class="flow-text") #{teammate.description}
-                        p(class="pt-100") TODO: Curriculum
+                        div(class="pt-100")
+                            object(data=`${teammate.curriculumRoute}` type="application/pdf" width="90%" height="800px")
 
 
         script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')

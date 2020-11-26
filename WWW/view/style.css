@@ -1,7 +1,5 @@
 body {
     background-color: rgb(255, 255, 255);
-    margin: 0;
-    height: 100%;
 }
 
 .bg-grey {
@@ -10,8 +8,6 @@ body {
 
 html {
     padding-bottom: 0px !important;
-    margin: 0;
-    height: 100%;
 }
 
 .h1-title {
@@ -68,6 +64,10 @@ h5 {
     margin-bottom: 0px;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
+
 .pt-50 {
     padding-top: 50px;
 }
@@ -96,12 +96,15 @@ h5 {
     display: block;
 }
 
-.image-cropper {
+.image-circular {
+    display: inline-block;
     width: 200px;
     height: 200px;
-    overflow: hidden;
-    border-radius: 10%;
-    margin: 0 auto;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .img-icon {
@@ -115,15 +118,8 @@ h5 {
     margin-top: 80px;
 }
 
-.circular {
-    float: right;
-    display: inline;
-    height: 127%;
-    width: auto;
-}
-
 .with-background {
-    background-image: url('https://a-static.besthdwallpaper.com/montana-de-hielo-papel-pintado-3554x1999-3228_53.jpg');
+    background-image: url("/images/mountain_wallpaper.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
