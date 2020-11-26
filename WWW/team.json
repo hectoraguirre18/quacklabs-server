@@ -7,7 +7,7 @@
           "languages": ["Java", "C++", "Javascript", "Dart", "Kotlin"],
           "description": "Estudiante de ingenieria que ama los patos y los chistes malos.",
           "imageRoute": "/images/hector.png",
-          "curriculumRoute": ""
+          "curriculumRoute": "/pdfs/hector.pdf"
        },
        {
           "name": "Carlos Tomas",
