@@ -1,5 +1,7 @@
 body {
     background-color: rgb(255, 255, 255);
+    margin: 0;
+    height: 100%;
 }
 
 .bg-grey {
@@ -8,9 +10,11 @@ body {
 
 html {
     padding-bottom: 0px !important;
+    margin: 0;
+    height: 100%;
 }
 
-h1 {
+.h1-title {
     display: block; 
     font-size: 9vw;
 }
@@ -70,6 +74,10 @@ h5 {
 
 .mt-50 {
     margin-top: 50px;
+}
+
+.p-25 {
+    padding: 25px 0px;
 }
 
 .mt-100 {
