@@ -10,17 +10,9 @@ logger.level = 'debug';
 http.createServer((req, res) => {
   if (req.url) {
     if (req.url == '/about') {
-      /*fs.readFile('./WWW/team.json', (err, data) => {
-        if(err) {
-          logger.warn(`NOT FOUND ${req.method} ${req.url}`);
-          res.writeHead(404, {"Content-Type": "text/html"});
-          res.write('NOT FOUND');
-        } else {*/
       res.writeHead(200, { "Content-Type": "application/json" });
       res.write(JSON.stringify(team));
-      //}
       res.end();
-      //})
     } else if (req.url.split('.').pop() == 'png') {
       try {
         fs.readFile(`./WWW/assets${req.url}`, (err, data) => {
