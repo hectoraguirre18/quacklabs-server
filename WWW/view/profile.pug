@@ -1,7 +1,7 @@
 doctype html
 html
     head 
-        title DuckLabs
+        title DuckLabs - #{teammate.name}
         meta(charset='utf-8')
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")  
         link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
@@ -24,6 +24,8 @@ html
                         p(class="flow-text") #{teammate.description}
                         div(class="pt-100")
                             object(data=`${teammate.curriculumRoute}` type="application/pdf" width="90%" height="800px")
+                                p It appears you don't have a PDF plugin for this browser. No biggie... you can 
+                                    a(href=`${teammate.curriculumRoute}`) click here to download the PDF file.
 
 
         script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
