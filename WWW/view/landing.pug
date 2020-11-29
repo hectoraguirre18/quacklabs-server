@@ -20,17 +20,17 @@ html
                                 h1(class="amber-text text-darken-1 left-align h1-title") Quack#[span(class="white-text") Labs]
                             div(class="col s12 m12")
                                 div(class="font-style pl-10")
-                                    span(class="right-align") Nos encanta  
+                                    span(class="right-align") We love  
                                         div(class="animation-font left-align")
                                             ul(class="flip4 purple-text text-lighten-2") 
-                                                li Programar
-                                                li Planificar
-                                                li Trabajar 
-                                                li Crear  
-                                                li Innovar
+                                                li programming.
+                                                li planning.
+                                                li to work. 
+                                                li to create.
+                                                li to innovate.
                 div(class="row center-align pt-20")
-                    div(class="col s12 m12 font-style-desc justify-text")
-                        span(class="white-text") En cualquier entorno... #[span(class="blue-text text-darken-3") ¡Hacemos cosas increíbles!] Desarrollamos estrategias que nos ayudan a crear soluciones claras, objetivas y funcionales, nuestros clientes son nuestra inspiración diaria.
+                    div(class="col s12 m12 font-style-desc justify-text")  
+                        span(class="white-text") In any environment ... #[span(class="blue-text text-darken-3") We do amazing things!] We develop strategies that help us create clear, objective and functional solutions, our clients are our daily inspiration.
                 div(class="row bottom-page center-align white-text")
                     <i class="large material-icons jump">keyboard_arrow_down</i>
         svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150")
@@ -39,26 +39,26 @@ html
         div(class="container mt-0")
             div(class="row valign-wrapper")
                 div(class="col s12 m6")
-                    div(class="center-align")
-                        h3(class="blue-text text-darken-3") Desarrollo Web
-                        h5(class="grey-text text-darken-4") Desarrollamos sitios auto administrables, responsivos, funcionales, interactivos y enfocados a los requerimientos de cada cliente.
+                    div
+                        h3(class="blue-text text-darken-3") Web development
+                        h5(class="grey-text text-darken-2 font-style-desc") We develop self-administered, responsive, functional, interactive sites focused on the requirements of each client.
                 div(class="col s12 m6")
-                    div(class="right-align")
-                        img(src='/images/web-development.png', class="logo-config", alt="desarrollo web")
+                    div(class="center-align")
+                        img(src='/images/web-development.png', alt="desarrollo web")
             div(class="row valign-wrapper")
                 div(class="col s12 m6")
                     div(class="left-align")
                         img(src='/images/mobile-development.png', alt="desarrollo móvil")
                 div(class="col s12 m6")
-                    div(class="center-align")
-                        h3(class="blue-text text-darken-3") Desarrollo Móvil
-                        h5(class="grey-text text-darken-4") Desarrollamos aplicaciones móviles para iOS y Android, nuestros servicios incluyen, planeación, diseño, publicación y mantenimiento.
-        div(class="bg-grey pt-20 pb-20")
+                    div
+                        h3(class="blue-text text-darken-3") Mobile development
+                        h5(class="grey-text text-darken-2 font-style-desc") We develop mobile applications for iOS and Android, our services include planning, design, publication and maintenance.
+        div(class="pt-20")
             div(class="container")
                 div(class="row")
                     div(class="col s12 m12")
                         div(class="center-align")
-                            h5(class="blue-text text-darken-3") Nuestras herramientas
+                            h5(class="blue-text text-darken-3") Our tools
                 div(class="row center-align valign-wrapper pt-20")
                     div(class="col s4 m3")
                         img(src="/images/node-js.png", class="img-icon", alt="NodeJs logo")
@@ -78,14 +78,11 @@ html
                     div(class="col s4 m3")
                         img(src="/images/oracle.png", class="img-icon", alt="Oracle logo")
                  
-
-
-
-        svg(class="display-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320")
-            path(fill="#212121" fill-opacity="1" d="M0,288L80,282.7C160,277,320,267,480,245.3C640,224,800,192,960,192C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z")
+        svg(class="display-block", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 1440 300")
+            path(fill="#212121", fill-opacity="1", d="M0,288L80,282.7C160,277,320,267,480,245.3C640,224,800,192,960,192C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z")
         div(class="second-background mh-100 valign-wrapper")
             div(class="container pb-20")
-                h4(class="white-text mt-0") Equipo
+                h4(class="white-text mt-0") The team
                 div(class="row mt-20")
                     each teammate, index in team
                         div(class="col s6 m6 l3")
@@ -96,6 +93,6 @@ html
                                 div(class="card-content white-text")
                                     p #{teammate.description}
                                 div(class="card-action")
-                                    a(href=`/profile/${index}`, class="amber-text text-darken-1") Ver más
+                                    a(href=`/profile/${index}`, class="amber-text text-darken-1") See more
 
         script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
