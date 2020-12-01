@@ -13,7 +13,7 @@
           "name": "Carlos Tomas",
           "lastName": "Garcia Martinez",
           "languages": ["C++", "Java", "JavaScript", "Abap", "Python"],
-          "description": "Estudiante de la UACH, con exelente actitud, ama los pinguinos y los gatos.",
+          "description": "Estudiante de la UACH, con excelente actitud, ama los pinguinos y los gatos.",
           "imageRoute": "/images/carlos.png",
           "curriculumRoute": "/pdfs/carlos.pdf"
        },
